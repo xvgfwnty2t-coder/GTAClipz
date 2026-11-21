@@ -144,7 +144,8 @@ def scouted_today(conn, streamer):
 
 def find_windows(v, start, end, lf):
     """Chat first; fall back to audio when there is no chat replay."""
-    common = dict(top_n=lf["max_moments_per_chunk"], offset=0.0)
+    common = dict(top_n=lf["max_moments_per_chunk"], offset=0.0,
+                  max_len=lf.get("max_len_s", 59))
     comments = []
     try:
         if v["platform"] == "twitch":
@@ -208,6 +209,14 @@ def process_vod(conn, v, conf, room=None):
              v["streamer"], start, end)
 
     windows = find_windows(v, start, end, lf)
+
+    # Skip the intro / just-chatting part at the start of a stream (2026-11-21)
+    skip = lf.get("skip_first_s", 0)
+    if skip:
+        n0 = len(windows)
+        windows = [w for w in windows if w.start >= skip]
+        if len(windows) < n0:
+            log.info("  dropped %d moments in the first %ds (intro)", n0 - len(windows), skip)
 
     limit = v["max_clips"] or lf["max_clips_per_chunk"]
     if v["lane"] == "publish":
