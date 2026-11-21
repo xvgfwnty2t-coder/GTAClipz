@@ -232,7 +232,7 @@ sources:
     permission: none          # -> campaign once you join a live Content Rewards pool
     notes: "Marathoning GTA 6 to 100% from launch. Pool campaigns (~$10K) on Content Rewards."
     longform: true
-    enabled: false        # no permission yet -> not clipped at all
+    enabled: true    # scouting test 2026-11-21: never published (permission none)
 
   - id: xqc
     platform: twitch
@@ -241,7 +241,7 @@ sources:
     link: "twitch.tv/xqc"
     permission: none
     longform: true
-    enabled: false        # no permission yet -> not clipped at all
+    enabled: true    # scouting test 2026-11-21: never published (permission none)
 
   - id: caseoh
     platform: twitch
@@ -259,7 +259,7 @@ sources:
     link: "twitch.tv/agent00"
     permission: none
     longform: true
-    enabled: false        # no permission yet -> not clipped at all
+    enabled: true    # scouting test 2026-11-21: never published (permission none)
 
   # ── YOUTUBE x ROCKSTAR 24H LAUNCH STREAM — add the VOD link to vod_queue ──
   #    once it exists. Roster: Caylus, Zhong, Kat Buno, Jelly, Rivers,
