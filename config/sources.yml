@@ -29,6 +29,8 @@ defaults:
 sources:
 
   # ── JOINED CAMPAIGNS (2026-11-17) — permission: campaign ─────────────────
+  # NOTE 2026-11-21: these campaigns were joined by the upstream author of this tool, NOT by the owner of this fork.
+  # Every one of them is switched OFF below until the owner joins it and checks the brief.
   # Each campaign's caption/hook/platform rules are applied automatically.
   # After a campaign clip posts, the review issue gets a "SUBMIT NOW" comment:
   # links must be submitted on contentrewards.com within 30 minutes.
@@ -59,7 +61,7 @@ sources:
       - "Tomo's GTA 6 reaction"
       - "Tomo in Vice City"
     longform: true
-    enabled: true
+    enabled: false   # switched off 2026-11-21: the upstream author joined this campaign, not you. Flip to true only after you join it.
 
   - id: cr_lacy_gta
     platform: twitch
@@ -89,7 +91,7 @@ sources:
         url: "https://contentrewards.com/c/campaigns/2886f500-f062-48dd-a9b4-9de5725f8186"
         note: "ONLY if 2+ CORE members (Lacy, Jason, Stable Ronaldo, Marlon, Adapt, Silky) are on screen"
     longform: true
-    enabled: true
+    enabled: false   # switched off 2026-11-21: the upstream author joined this campaign, not you. Flip to true only after you join it.
 
   - id: cr_ruckus_dom
     platform: kick
@@ -113,7 +115,7 @@ sources:
     footage_before: "2026-11-20T12:00:00-08:00"
     publish_before: "2026-12-19T23:59:00-08:00"
     longform: true
-    enabled: true
+    enabled: false   # switched off 2026-11-21: the upstream author joined this campaign, not you. Flip to true only after you join it.
 
   - id: cr_clix_gta
     platform: twitch
@@ -135,7 +137,7 @@ sources:
     publish_after: "2026-11-18T00:00:00-05:00"
     footage_after: "2026-11-18T00:00:00-05:00"
     longform: true
-    enabled: true
+    enabled: false   # switched off 2026-11-21: the upstream author joined this campaign, not you. Flip to true only after you join it.
 
   - id: cr_yourrage
     platform: twitch
@@ -156,7 +158,7 @@ sources:
     publish_after: "2026-11-18T00:00:00-05:00"
     footage_after: "2026-11-18T00:00:00-05:00"
     longform: true
-    enabled: true                         # joined on Content Rewards Nov 18, 1:36 PM ET
+    enabled: false   # switched off 2026-11-21: the upstream author joined this campaign, not you. Flip to true only after you join it.
 
   - id: cr_jason
     platform: twitch
@@ -181,7 +183,7 @@ sources:
         url: "https://contentrewards.com/c/campaigns/2886f500-f062-48dd-a9b4-9de5725f8186"
         note: "ONLY if 2+ CORE members (Lacy, Jason, Stable Ronaldo, Marlon, Adapt, Silky) are on screen"
     longform: true
-    enabled: true
+    enabled: false   # switched off 2026-11-21: the upstream author joined this campaign, not you. Flip to true only after you join it.
 
   - id: cr_bobby
     platform: twitch
@@ -200,7 +202,7 @@ sources:
     publish_after: "2026-11-18T00:00:00-05:00"
     footage_after: "2026-11-18T00:00:00-05:00"
     longform: true
-    enabled: true
+    enabled: false   # switched off 2026-11-21: the upstream author joined this campaign, not you. Flip to true only after you join it.
 
   # ── BIG GTA 6 STREAMERS, NO PROGRAM FOUND (scout lane: proof clips only) ──
   - id: nickmercs
