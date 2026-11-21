@@ -127,7 +127,7 @@ publish:
 
 storage:
   r2_bucket: "gta6-clips"
-  r2_public_base: "https://pub-bf2f85f4cf9e48589d4535e453491451.r2.dev"   # public, not secret
+  r2_public_base: ""   # EMPTY on purpose (2026-11-21): no Cloudflare. It used to be the upstream author bucket; with it set, a run crashed after the 1st clip because the R2 keys are missing.
   keep_renders_days: 3
 
 # ── Production brake ──────────────────────────────────────────────────
@@ -150,8 +150,10 @@ longform:
   max_clips_per_chunk: 2    # publish lane: only the best 2 moments per VOD chunk
   min_score: 20             # drop clips scoring under this (your approvals: 53% -> 62%)
   extra_tries: 3            # spare moments to try when some fall under min_score
-  pre_roll_s: 30            # chat reacts late; start the clip before the spike
-  clip_len_s: 45
+  pre_roll_s: 40            # chat reacts late; start the clip before the spike (was 30)
+  clip_len_s: 120           # was 45: peaks were cut off (2026-11-21). Trim it yourself.
+  max_len_s: 150            # hard ceiling per clip (the code used to force 59)
+  skip_first_s: 1800        # ignore the first 30 min of a VOD (intro / just chatting)
 
 # ── Scouting lane (no permission yet -> proof clips for outreach) ─────────
 scouting:
