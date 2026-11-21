@@ -155,7 +155,7 @@ longform:
 
 # ── Scouting lane (no permission yet -> proof clips for outreach) ─────────
 scouting:
-  enabled: false            # OFF: no time spent on streams we can't post
+  enabled: true             # ON for the quality test (2026-11-21): scout clips are never published
   clips_per_streamer_per_day: 2
   auto_discover: false      # OFF: only clip streams we're allowed to post
   auto_discover_top: 5
