@@ -234,6 +234,24 @@ sources:
     longform: true
     enabled: true    # scouting test 2026-11-21: never published (permission none)
 
+  - id: clix
+    platform: twitch
+    streamer: "Clix"
+    twitch_login: "clix"
+    link: "twitch.tv/clix"
+    permission: none
+    longform: true
+    enabled: true    # scouting test 2026-11-21: never published (permission none)
+
+  - id: lacy
+    platform: twitch
+    streamer: "Lacy"
+    twitch_login: "lacy"
+    link: "twitch.tv/lacy"
+    permission: none
+    longform: true
+    enabled: true    # scouting test 2026-11-21: never published (permission none)
+
   - id: xqc
     platform: twitch
     streamer: "xQc"
