@@ -23,7 +23,7 @@ defaults:
   # claim is blocked WORLDWIDE. GTA radio is licensed music (real labels, not
   # Rockstar), so claims are near-certain on any clip with the radio audible.
   # Under 60s a claim only redirects revenue; over 60s the clip dies entirely.
-  max_clip_seconds: 59
+  max_clip_seconds: 150    # was 59 (2026-11-21): test clips are longer so you can trim them yourself. Nothing is published yet; go back to 59 before posting Shorts
   min_clip_seconds: 8
 
 sources:
